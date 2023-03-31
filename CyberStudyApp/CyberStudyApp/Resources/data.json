@@ -1,0 +1,169 @@
+[
+    {
+        "id": 0,
+        "category": "Cybersecurity",
+        "content": {
+            "id": 0,
+            "image": "swift",
+            "time": "3 hours",
+            "description": "Understand the fundamentals of cybersecurity with ComptiaSecurity+.",
+            "lessons": [
+                {
+                    "id": 0,
+                    "title": "Attacks, Threats, & Vulnerabilities",
+                    "video": "Domain1",
+                    "duration": "2.5 hours",
+                    "explanation": "<div class='section' id='the-basics'><p>Constants and variables must be declared before they're used. You declare constants with the let keyword and variables with the var keyword. Here's an example of how constants and variables can be used to track the number of login attempts a user has made:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>maximumNumberOfLoginAttempts</span> = <span class='m'>10</span></li><li><span class='k'>var</span> <span class='nv'>currentLoginAttempt</span> = <span class='m'>0</span> </li></ol></div></div></div></div><p>You can provide a type annotation when you declare a constant or variable, to be clear about the kind of values the constant or variable can store. Write a type annotation by placing a colon after the constant or variable name, followed by a space, followed by the name of the type to use.</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>var</span> <span class='nv'>welcomeMessage</span>: <span class='nc'>String</span></li></ol></div></div></div><p>Constant and variable names can contain almost any character, including Unicode characters. Constant and variable names can't contain whitespace characters, mathematical symbols, arrows, private-use Unicode scalar values, or line- and box-drawing characters. Nor can they begin with a number, although numbers may be included elsewhere within the name. Once you've declared a constant or variable of a certain type, you can't declare it again with the same name, or change it to store values of a different type. Nor can you change a constant into a variable or a variable into a constant.</p>"
+                },
+                {
+                    "id": 1,
+                    "title": "Architecture & Design",
+                    "video": "Learn%20Swift%20for%20Beginners%20Lesson%201%20-%20Variables%20(Swift%205%20compatible)-2OZ07fklur8.mp4",
+                    "duration": "17 minutes",
+                    "explanation": "<p>Integers are whole numbers with no fractional component, such as 42 and -23. Integers are either signed (positive, zero, or negative) or unsigned (positive or zero). Swift provides signed and unsigned integers in 8, 16, 32, and 64 bit forms. These integers follow a naming convention similar to C, in that an 8-bit unsigned integer is of type UInt8, and a 32-bit signed integer is of type Int32. Like all types in Swift, these integer types have capitalized names. In most cases, you don't need to pick a specific size of integer to use in your code. Swift provides an additional integer type, Int, which has the same size as the current platform's native word size:</p><ul class=\"simple\"><li>On a 32-bit platform, <code class=\"docutils literal notranslate\"><span class=\"pre\">Int</span></code> is the same size as <code class=\"docutils literal notranslate\"><span class=\"pre\">Int32</span></code>.</li><li>On a 64-bit platform, <code class=\"docutils literal notranslate\"><span class=\"pre\">Int</span></code> is the same size as <code class=\"docutils literal notranslate\"><span class=\"pre\">Int64</span></code>.</li></ul><p>Unless you need to work with a specific size of integer, always use Int for integer values in your code. This aids code consistency and interoperability. Even on 32-bit platforms, Int can store any value between -2,147,483,648 and 2,147,483,647, and is large enough for many integer ranges.</p><p>Floating-point numbers are numbers with a fractional component, such as 3.14159, 0.1, and -273.15. Floating-point types can represent a much wider range of values than integer types, and can store numbers that are much larger or smaller than can be stored in an Int. Swift provides two signed floating-point number types:</p><ul class=\"simple\"><li><code class=\"docutils literal notranslate\"><span class=\"pre\">Double</span></code> represents a 64-bit floating-point number.</li><li><code class=\"docutils literal notranslate\"><span class=\"pre\">Float</span></code> represents a 32-bit floating-point number.</li></ul>"
+                },
+                {
+                    "id": 2,
+                    "title": "Implementation",
+                    "video": "Learn%20Swift%20for%20Beginners%20Lesson%201%20-%20Variables%20(Swift%205%20compatible)-2OZ07fklur8.mp4",
+                    "duration": "17 minutes",
+                    "explanation": "<p>Swift has a basic Boolean type, called Bool. Boolean values are referred to as logical, because they can only ever be true or false. Swift provides two Boolean constant values, true and false:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>orangesAreOrange</span> = <span class='k'>true</span></li><li><span class='k'>let</span> <span class='nv'>turnipsAreDelicious</span> = <span class='k'>false</span></li></ol></div></div></div><p>The types of orangesAreOrange and turnipsAreDelicious have been inferred as Bool from the fact that they were initialized with Boolean literal values. As with Int and Double above, you don't need to declare constants or variables as Bool if you set them to true or false as soon as you create them. Type inference helps make Swift code more concise and readable when it initializes constants or variables with other values whose type is already known.</p><p>Boolean values are particularly useful when you work with conditional statements such as the if statement:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>if</span> <span class='nv'>turnipsAreDelicious</span> { </li><li>    <span class='nv'>print</span>(<span class='s'>'Mmm, tasty turnips!'</span>) </li><li>} <span class='k'>else</span> {</li><li>    <span class='nv'>print</span>(<span class='s'>'Eww, turnips are horrible.'</span>) </li><li>}</li><li><span class='c'>// Prints 'Eww, turnips are horrible.'</span></li></ol></div></div></div>"
+                },
+                {
+                    "id": 3,
+                    "title": "Operations & Incident Response",
+                    "video": "Learn%20Swift%20for%20Beginners%20-%20Ep%2013%20-%20Optionals-uT2IHQpE3ms.mp4",
+                    "duration": "17 minutes",
+                    "explanation": "<p>You use optionals in situations where a value may be absent. An optional represents two possibilities: Either there is a value, and you can unwrap the optional to access that value, or there isn't a value at all.</p><p>Here's an example of how optionals can be used to cope with the absence of a value. Swift's Int type has an initializer which tries to convert a String value into an Int value. However, not every string can be converted into an integer. The string \"123\" can be converted into the numeric value 123, but the string 'hello, world' doesn't have an obvious numeric value to convert to.</p><p>The example below uses the initializer to try to convert a String into an Int:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>possibleNumber</span> = <span class='s'>\"123\"</span></li><li><span class='k'>let</span> <span class='nv'>convertedNumber</span> = <span class='nv'>Int</span>(<span class='nv'>possibleNumber</span>) </li><li><span class='c'>// convertedNumber is inferred to be of type 'Int?', or 'optional Int'</span> </li></ol></div></div></div><p>Because the initializer might fail, it returns an optional Int, rather than an Int. An optional Int is written as Int?, not Int. The question mark indicates that the value it contains is optional, meaning that it might contain some Int value, or it might contain no value at all. (It can't contain anything else, such as a Bool value or a String value. It's either an Int, or it's nothing at all.)</p><p>You can use an if statement to find out whether an optional contains a value by comparing the optional against nil. You perform this comparison with the \"equal to\" operator (==) or the \"not equal to\" operator (!=).</p><div class=\"highlight-swift notranslate\"><div class=\"code-sample\"><div class=\"Swift highlight\"><ol class=\"code-lines\"><li><span class=\"k\">if</span> <span class=\"nv\">convertedNumber</span> != <span class=\"k\">nil</span> {</li><li>    <span class=\"nv\">print</span>(<span class=\"s\">\"convertedNumber contains some integer value.\"</span>)</li><li>}</li><li><span class=\"c\">// Prints \"convertedNumber contains some integer value.\"</span></li></ol></div></div></div>"
+                },
+                {
+                    "id": 4,
+                    "title": "Governance, Risk, & Compliance",
+                    "video": "Learn%20Swift%20for%20Beginners%20Lesson%201%20-%20Variables%20(Swift%205%20compatible)-2OZ07fklur8.mp4",
+                    "duration": "17 minutes",
+                    "explanation": "<p>An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (+) adds two numbers, as in \"let i = 1 + 2\".</p><p>The assignment operator (a = b) initializes or updates the value of a with the value of b:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>b</span> = <span class='m'>10</span></li><li><span class='k'>var</span> <span class='nv'>a</span> = <span class='m'>5</span></li><li><span class='nv'>a</span> = <span class='nv'>b</span></li><li><span class='c'>// a is now equal to 10</span></li></ol></div></div></div><p>Swift supports the four standard arithmetic operators for all number types:</p><ul class='simple'><li>Addition (<code class='docutils literal notranslate'><span class='pre'>+</span></code>)</li><li>Subtraction (<code class='docutils literal notranslate'><span class='pre'>-</span></code>)</li><li>Multiplication (<code class='docutils literal notranslate'><span class='pre'>*</span></code>)</li><li>Division (<code class='docutils literal notranslate'><span class='pre'>/</span></code>)</li></ul><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='m'>1</span> + <span class='m'>2</span>       <span class='c'>// equals 3</span></li><li><span class='m'>5</span> - <span class='m'>3</span>       <span class='c'>// equals 2</span></li><li><span class='m'>2</span> * <span class='m'>3</span>       <span class='c'>// equals 6</span> </li><li><span class='m'>10.0</span> / <span class='m'>2.5</span>  <span class='c'>// equals 4.0</span></li></ol></div></div></div><p>Swift supports the following comparison operators:</p><ul class='simple'><li>Equal to (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>==</span> <span class='pre'>b</span></code>)</li><li>Not equal to (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>!=</span> <span class='pre'>b</span></code>)</li><li>Greater than (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>&gt;</span> <span class='pre'>b</span></code>)</li><li>Less than (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>&lt;</span> <span class='pre'>b</span></code>)</li><li>Greater than or equal to (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>&gt;=</span> <span class='pre'>b</span></code>)</li><li>Less than or equal to (<code class='docutils literal notranslate'><span class='pre'>a</span> <span class='pre'>&lt;=</span> <span class='pre'>b</span></code>)</li></ul><p>Each of the comparison operators returns a Bool value to indicate whether or not the statement is true:</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='m'>1</span> == <span class='m'>1</span>   <span class='c'>// true because 1 is equal to 1</span></li><li><span class='m'>2</span> != <span class='m'>1</span>   <span class='c'>// true because 2 is not equal to 1</span></li><li><span class='m'>2</span> &gt; <span class='m'>1</span>    <span class='c'>// true because 2 is greater than 1</span></li><li><span class='m'>1</span> &lt; <span class='m'>2</span>    <span class='c'>// true because 1 is less than 2</span> </li><li><span class='m'>1</span> &gt;= <span class='m'>1</span>   <span class='c'>// true because 1 is greater than or equal to 1</span></li><li><span class='m'>2</span> &lt;= <span class='m'>1</span>   <span class='c'>// false because 2 is not less than or equal to 1</span></li></ol></div></div></div>"
+         
+             
+ 
+               
+                }
+            ]
+        },
+        "test": {
+            "id": 0,
+            "image": "testSwift",
+            "time": "30 minutes",
+            "description": "Gear up and put your Cyber knowledge to the test.",
+            "questions": [
+                {
+                    "id": 0,
+                    "content": "<p>What keyword is used to define a constant in Swift?</p>",
+                    "correctIndex": 2,
+                    "answers": [
+                        "const",
+                        "var",
+                        "let",
+                        "const var"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "content": "<p>How large is an Int?</p>",
+                    "correctIndex": 3,
+                    "answers": [
+                        "16 bits",
+                        "32 bits",
+                        "64 bits",
+                        "It depends on the platform"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "content": "<p>What is the value of <span class='pre'>b</span> in the following expression?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>a</span> = <span class='k'>false</span></li><li><span class='k'>let</span> <span class='nv'>b</span> = <span class='k'>false</span> || ( <span class='k'>true</span> && !<span class='k'>a</span> )</li></ol></div></div></div>",
+                    "correctIndex": 0,
+                    "answers": [
+                        "true",
+                        "false"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "content": "<p>What is the type and value of str in the following expression?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>num</span> = <span class='m'>12.0</span></li><li><span class='k'>let</span> <span class='nv'>str</span> = <span class='nv'>String</span>(<span class='nv'>num</span>)</li></ol></div></div></div>",
+                    "correctIndex": 1,
+                    "answers": [
+                        "Type: String, Value: \"12.0\"",
+                        "Type: String?, Value: \"12.0\"",
+                        "Type: String, Value: \"12\"",
+                        "Type: String?, Value: nil"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "content": "<p>What operator takes two numbers, and returns a boolean?</p>",
+                    "correctIndex": 4,
+                    "answers": [
+                        "<",
+                        ">",
+                        "==",
+                        "!=",
+                        "all of the above"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "content": "<p>What does the following code output?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>let</span> <span class='nv'>total</span> = <span class='m'>0</span></li><li><span class='k'>let</span> <span class='nv'>nums</span> = [<span class='m'>0</span>, <span class='m'>1</span>, <span class='m'>2</span>, <span class='m'>3</span>]</li><li><span class='k'>for</span> <span class='nv'>num</span> <span class='k'>in</span> <span class='nv'>nums</span> {</li><li><span class='nv'>total</span> += <span class='nv'>num</span></span></li><li>}</li>",
+                    "correctIndex": 2,
+                    "answers": [
+                        "0",
+                        "3",
+                        "6",
+                        "10"
+                    ]
+                },
+                {
+                    "id": 6,
+                    "content": "<p>What is the following function's return type?</p><div class='highlight-swift notranslate'><div class='code-sample'><div class='Swift highlight'><ol class='code-lines'><li><span class='k'>func</span> <span class='nv'>foo</span>(<span class='nv'>bar</span>: <span class='nc'>String</span>, <span class='nv'>bizz</span>: <span class='nc'>Bool</span>) -&gt; <span class='nc'>Int</span> {...}</li></ol></div></div></div>",
+                    "correctIndex": 2,
+                    "answers": [
+                        "String",
+                        "Bool",
+                        "Int",
+                        "It doesn't have a return type"
+                    ]
+                },
+                {
+                    "id": 7,
+                    "content": "Structures can't:",
+                    "correctIndex": 3,
+                    "answers": [
+                        "Define properties to store values",
+                        "Define initializers to set up their initial state",
+                        "Conform to protocols to provide standard functionality of a certain kind",
+                        "Inherit the characteristics of another structure"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "content": "Why might you throw an error?",
+                    "correctIndex": 1,
+                    "answers": [
+                        "The code has become too complicated to continue writing",
+                        "Something unexpected happened and the normal flow of execution can't continue",
+                        "To pass data to a caller method"
+                    ]
+                },
+                {
+                    "id": 9,
+                    "content": "How can you deal with an error?",
+                    "correctIndex": 3,
+                    "answers": [
+                        "By correcting the problem",
+                        "By trying an alternative approach",
+                        "By informing the user of the failure",
+                        "All of the above"
+                    ]
+                }
+            ]
+        }
+    }
+]
